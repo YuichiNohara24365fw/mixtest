@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>混在コンテンツテスト</title>
+</head>
+<body>
+    <h1>HTTPとHTTPSの混在コンテンツテスト</h1>
+
+    <!-- HTTPのリクエストを発生させるJavaScript -->
+    <script type="text/javascript">
+        function openYahoo() {
+            // HTTP経由でYahooを開こうとする
+            window.open("http://www.yahoo.co.jp", "_blank");
+        }
+    </script>
+
+    <button onclick="openYahoo()">Yahooを開く（HTTP経由）</button>
+
+    <p>このページはHTTPSで提供されていると仮定し、上記ボタンを押すとHTTPコンテンツが含まれる動作になります。</p>
+</body>
+</html>
